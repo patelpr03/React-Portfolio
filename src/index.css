@@ -11,3 +11,187 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: white;
+}
+/*Added flex containers*/
+
+header {
+  padding: 10px 0 20px;
+  background-color: rgb(59, 100, 138);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  top: 0;
+}
+
+header h1 {
+  display: inline-flex;
+  padding: 20px 100px 20px 25px;
+  background-color: rgb(101, 146, 214);
+  color: white;
+  margin-top: 15px;
+  font-weight:bold;
+  font-size: 50px;
+  border-radius: 0 15px 15px 0;
+  box-shadow: rgb(38, 41, 233) 5px 5px;
+  text-shadow: black 3px 5px;
+  
+}
+
+header a {
+  text-decoration: none;
+  color: whitesmoke;
+  
+}
+
+header nav {
+  margin-top: auto;
+  display: flex;
+  padding: 10px 15px 0 15px;
+}
+
+header nav ul {
+display: flex;
+list-style: none;
+font-size: 30px;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  text-decoration: underline;
+  text-shadow: black 0 0 3px;
+}
+
+
+
+
+
+/*Intro section for my About Me*/
+.work {
+  width: 30%;
+  border-right:rgb(32, 32, 28) 5px solid;
+  padding: 20px 15px 20px 15px;
+  font-size: 30px;
+  margin: 10px;
+  text-align: right;
+  text-shadow: rgba(134, 121, 121, 0.418) 5px 5px 5px;
+}
+
+.intro {
+  display: flex;
+}
+
+.intro img{
+  padding: 20px 20px 20px 20px;
+  height: 300px;
+  float: left;
+}
+
+.intro p {
+  margin: 10px;
+}
+
+.info {
+  width: 70%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*WORK SECTION*/
+
+/*Originally had all of the link images in the css but moved them to the index file*/
+
+main {
+  display: flex;  
+}
+
+.work-container {
+  width: 70%;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-item {
+  height: auto;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.work-item span {
+  position: absolute;
+  top: 50%;
+  left:10px;
+  font-size: 30px;
+  background-color: rgb(101, 146, 214);
+  padding-right: 5px;
+  color: white;
+  opacity: 0.95;
+  text-align:center;
+  text-shadow: rgb(51, 44, 35) 2px 2px;
+}
+
+.language {
+  font-size: 15px;
+}
+.work-item img {
+  border: rgb(101, 146, 214) 5px solid;
+  height: auto;
+  width: 100%;
+}
+
+.second-row, .third-row {
+  display: flex;
+  
+}
+
+.work-item img:hover {
+  opacity: 0.5;
+}
+
+
+/*Contact*/
+
+.contact {
+  display: flex;
+}
+
+.contact ul {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact li {
+  list-style: none;
+  padding: 30px 15px;
+}
+
+.contact a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+}
+
+/*Adding media queries*/
+
+/* Width at 1024px and below */
